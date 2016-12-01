@@ -1,24 +1,49 @@
-button {
-		/*　要素の外側の余白　*/
-		margin: 3px;
-		/*　文字の大きさ　*/
-		font-size: 15px;
-		/*　丸角　*/
-		border-radius: 5px;
-		/*　背景　*/
-		background-color: skyblue;
+table {
+		border-collapse: collapse;
+		margin: 10px;
+}
+
+table#excel td {
+		border: 1px solid #bbb;
+		width: 100px;
+		text-align: center;
+}
+
+table#excel tr:nth-child(1) {
+		background-color: #eee;
+		font-weight: bold;
+}
+
+tnullr td:nth-child(1) {
+		background-color: #eee;
+		font-weight: bold;
 }
 
 table {
-		/*　ボーダー　*/
-		border: solid 1px #aaa;
-		border-collapse: collapse;
-		/*　テキスト　*/
-		text-align: center;
+		margin: 10px;
 }
-td {
-		/*　幅　*/
-		width: 35px;
-		/*　ボーダー　*/
-		border: solid 1px #aaa;
+
+ul {
+		position: absolute;
+		left: 50%;
+		width: 40%;
+		border: solid;
+		border-color: #6495ed;
+		border-radius: 20px;
+		padding: 10px 40px 10px;
+}
+
+form {
+		margin: 20px 15px;
+		border: 1px solid;
+		padding: 5px;
+		width: 45%;
+}
+
+body {
+		padding: 10px;
+}
+
+p {
+		margin: 5px;
 }

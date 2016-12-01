@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta lang="ja" charset="utf-8">
 
-	<script src="excel.js"></script>
+<head>
+	<meta charset="utf-8">
+	<meta lang="ja">
 	<link rel="stylesheet" type="text/css" href="design.css">
+	<script src="excel.js"></script>
 	<title>表計算ソフトを作ろう！</title>
 </head>
+
 <body>
-	<button type="button" onclick="makeTr();">縦の行を追加</button>
-	<button type="button" onclick="removeTr();">縦の行を削除</button>
-	<button type="button" onclick="makeTd();">横の列を追加</button>
-	<button type="button" onclick="removeTd();">横の列を削除</button>
-	<table id="table_id">
-		<tr>
-			<td></td><td>A</td>
-		</tr>
-		<tr>
-			<td>1</td><td></td>
-		</tr>
+	<button type="button" id="makeColumn">横に追加</button>
+	<button type="button" id="removeColumn">横を削除</button>
+	<button type="button" id="makeRow">縦に追加</button>
+	<button type="button" id="removeRow">縦を削除</button>
+
+	<table id="excel">
+		<tr><td></td><td>A</td></tr>
+		<tr><td>1</td><td></td></tr>
 	</table>
+	<ul>
+		<li>セルの位置に内容を入れます。<br>
+		　例：「A1=4」A1に4を入れます。</li>
+		<li>セルの位置を入力し決定を押すとテーブル内の内容を表示します。<br>
+		　例：「A1」A1の内容を表示します。</li>
+		<li>セルの内容同士を足します。<br>
+		　例：「A1+B1」A1の内容とB1の和を表示します。</li>
+	</ul>
+<form name="form">
+		<label>
+			<p id="textMessage">メッセージ</p>
+			<input type="text" name="commandText">
+			<input type="button" onclick="sendText();" value="決定">
+		</label>
+	</form>
 </body>
+
 </html>
