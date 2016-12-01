@@ -1,0 +1,24 @@
+button {
+		/*　要素の外側の余白　*/
+		margin: 3px;
+		/*　文字の大きさ　*/
+		font-size: 15px;
+		/*　丸角　*/
+		border-radius: 5px;
+		/*　背景　*/
+		background-color: skyblue;
+}
+
+table {
+		/*　ボーダー　*/
+		border: solid 1px #aaa;
+		border-collapse: collapse;
+		/*　テキスト　*/
+		text-align: center;
+}
+td {
+		/*　幅　*/
+		width: 35px;
+		/*　ボーダー　*/
+		border: solid 1px #aaa;
+}
